@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { cn } from '$lib/utils'
-	import Gemini from '$lib/imgs/Gemini.svg'
-	import GPT from '$lib/imgs/GPT.svg'
-	import Claude from '$lib/imgs/Claude.svg'
-	import Llama from '$lib/imgs/Llama.svg'
+	import SBCounty from '$lib/imgs/county/sb-county.svg'
+	import LawLibrary from '$lib/imgs/county/law-library.svg'
+	import PublicDefender from '$lib/imgs/county/public-defender.svg'
 
 	export let models: string[]
 	export let title: string
@@ -36,27 +35,21 @@
 		<div class="absolute bottom-5 left-5 flex items-center justify-start space-x-2">
 			<!-- Icon Array -->
 			<!-- Can not iterating models array in here, because it is not allow to parse native images -->
-			{#if models.includes('GPT')}
+			{#if models.includes('SBCounty')}
 				<div class="h-[24px] w-[24px]">
-					<img class="rounded-full" width="24" height="24" alt="ModelsIcon" src={GPT} />
+					<img class="rounded" width="24" height="24" alt="Santa Barbara County" src={SBCounty} />
 				</div>
 			{/if}
 
-			{#if models.includes('Claude')}
+			{#if models.includes('LawLibrary')}
 				<div class="h-[24px] w-[24px]">
-					<img class="rounded-full" width="24" height="24" alt="ModelsIcon" src={Claude} />
+					<img class="rounded" width="24" height="24" alt="Law Library" src={LawLibrary} />
 				</div>
 			{/if}
 
-			{#if models.includes('Llama')}
+			{#if models.includes('PublicDefender')}
 				<div class="h-[24px] w-[24px]">
-					<img class="rounded-full" width="24" height="24" alt="ModelsIcon" src={Llama} />
-				</div>
-			{/if}
-
-			{#if models.includes('Gemini')}
-				<div class="h-[24px] w-[24px]">
-					<img class="rounded-full" width="24" height="24" alt="ModelsIcon" src={Gemini} />
+					<img class="rounded" width="24" height="24" alt="Public Defender" src={PublicDefender} />
 				</div>
 			{/if}
 		</div>

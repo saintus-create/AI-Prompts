@@ -1,25 +1,25 @@
 {
-	"JapaneseMaster": [
+	"CountyUpdates": [
 		{
-			"title": "Katakana Killer",
-			"desc": "Convert katakana into English",
-			"category": "Japanese Master",
-			"models": ["GPT"],
-			"promptContent": "The phrase that I provided is a Japanese Katakana phrase, please translate or convert into English, and keep it clarity and concise."
+			"title": "County Services Update",
+			"desc": "Latest updates from Santa Barbara County",
+			"category": "County News",
+			"models": ["SBCounty"],
+			"promptContent": "Recent updates and announcements from Santa Barbara County services and departments."
 		},
 		{
-			"title": "Grammar Interpreter",
-			"desc": "Explain grammar of japanese",
-			"category": "Japanese Master",
-			"models": ["GPT"],
-			"promptContent": "The phrase that I provided is a Japanese grammar, please explain it with English, keep it clarity and concise, and give some examples of usage."
+			"title": "Legal Resources Available",
+			"desc": "Law Library Services Update",
+			"category": "Legal Resources",
+			"models": ["LawLibrary", "SBCounty"],
+			"promptContent": "Current information about legal resources and services available at the Santa Barbara County Law Library."
 		},
 		{
-			"title": "Kanji Master",
-			"desc": "Explain Kanji of japanese",
-			"category": "Japanese Master",
-			"models": ["GPT"],
-			"promptContent": "The phrase that I provided is Japanese Kanji, please give me it's meaning and Hiragana, and then explain it with English, keep it clarity and concise, eventually give some examples of usage."
+			"title": "Public Defender News",
+			"desc": "Updates from Public Defender's Office",
+			"category": "Legal Services",
+			"models": ["PublicDefender", "SBCounty"],
+			"promptContent": "Latest updates and information from the Santa Barbara County Public Defender's Office."
 		}
 	],
 
@@ -28,21 +28,21 @@
 			"title": "Code Interpreter",
 			"desc": "Explain programming code",
 			"category": "Code Master",
-			"models": ["GPT", "Gemini", "Claude", "Llama"],
+			"models": ["GitHub", "Google", "Microsoft", "ANTHROP"],
 			"promptContent": "Explain the following code I provided, tell me what is it doing, and give me some cases if necessary."
 		},
 		{
 			"title": "Bug Finder",
 			"desc": "Find Bugs in code",
 			"category": "Code Master",
-			"models": ["GPT", "Gemini", "Claude", "Llama"],
+			"models": ["Meta", "Google", "Microsoft", "GitHub"],
 			"promptContent": "Compile the following code I provided, tell me where is it wrong and how to fix it with clarity, precise and detailed words, eventually give me some cases if necessary."
 		},
 		{
 			"title": "Localizer",
 			"desc": "Localize a json file seamlessly",
 			"category": "Code Master",
-			"models": ["GPT", "Gemini", "Claude", "Llama"],
+			"models": ["ANTHROP", "Meta", "Google", "Microsoft"],
 			"promptContent": "I will give you a JSON file structure and the corresponding data content, I will use it as the localization of my web application, help me translate it into Japanese and keep it accurate and simple."
 		}
 	],
@@ -51,7 +51,7 @@
 			"title": "Japanese IT Interviewer",
 			"desc": "Training Japanese for an IT interview",
 			"category": "Interviewer",
-			"models": ["GPT", "Gemini"],
+			"models": ["GitHub", "Microsoft", "Meta", "ANTHROP", "Google"],
 			"promptContent": "As you are a japanese recruiter and there have a position of frontend engineer that need a candidate who have skills in ts, js, vue ecosystem and more about frontend fields, please interview me using japanese and ask me professional questions continually until I say done, at same time you need to fix it and give me some examples if any fault in text."
 		}
 	]
